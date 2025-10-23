@@ -1,0 +1,57 @@
+<div class="bootstrap-demo bootstrap-theme">
+    <h2 class="mb-4">Bootstrap UI Demo</h2>
+
+    <!-- Buttons -->
+    <div class="mb-3">
+        <button class="btn btn-primary me-2">Primary</button>
+        <button class="btn btn-secondary me-2">Secondary</button>
+        <button class="btn btn-outline-primary">Outline</button>
+    </div>
+
+    <!-- Input Form -->
+    <form class="mb-4">
+        <div class="mb-3">
+            <label for="exampleInput" class="form-label">Example input</label>
+            <input type="text" class="form-control" id="exampleInput" placeholder="Enter text">
+        </div>
+        <div class="mb-3">
+            <label for="exampleSelect" class="form-label">Example select</label>
+            <select class="form-select" id="exampleSelect">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+
+    <!-- List Group -->
+    <ul class="list-group mb-4">
+        <li class="list-group-item active">Active item</li>
+        <li class="list-group-item">Second item</li>
+        <li class="list-group-item">Third item</li>
+    </ul>
+
+    <!-- Modal Trigger -->
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#demoModal">
+        Open Modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="demoModalLabel">Bootstrap Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This is a Bootstrap modal example.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

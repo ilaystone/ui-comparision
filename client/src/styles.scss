@@ -37,6 +37,21 @@
 // html, body { height: 100%; }
 // body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex; // optional, helps with centering or layout
+  flex-direction: column;
+}
+
 :root {
   --color-bg-primary: #1e1e1e;
   --color-bg-sidebar: #141414;

@@ -4,7 +4,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'app-bootstrap-demo',
   imports: [],
   templateUrl: './bootstrap-demo.html',
-  styleUrl: './bootstrap-demo.scss',
-  encapsulation: ViewEncapsulation.ShadowDom,
+  styleUrls: ['./bootstrap-demo.scss'],
 })
 export class BootstrapDemoComponent {}

@@ -1,15 +1,14 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { users } from '../shared/userTable';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-bootstrap-demo',
+  selector: 'app-tailwind-demo',
   imports: [CommonModule],
-  templateUrl: './bootstrap-demo.html',
-  styleUrls: ['./bootstrap-demo.scss'],
-  encapsulation: ViewEncapsulation.ShadowDom,
+  templateUrl: './tailwind-demo.html',
+  styleUrl: './tailwind-demo.scss',
 })
-export class BootstrapDemoComponent {
+export class TailwindDemoComponent {
   public users = users;
 
   currentPage = 1;

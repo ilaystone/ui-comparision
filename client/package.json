@@ -31,6 +31,7 @@
     "@angular/platform-browser": "^20.3.0",
     "@angular/router": "^20.3.0",
     "@popperjs/core": "^2.11.8",
+    "@tailwindcss/postcss": "^4.1.16",
     "bootstrap": "^5.3.8",
     "daisyui": "^5.3.8",
     "flowbite": "^3.1.2",

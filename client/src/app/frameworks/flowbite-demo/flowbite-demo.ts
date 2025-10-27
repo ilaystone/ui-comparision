@@ -3,13 +3,13 @@ import { users } from '../shared/userTable';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-bootstrap-demo',
+  selector: 'app-flowbite-demo',
   imports: [CommonModule],
-  templateUrl: './bootstrap-demo.html',
-  styleUrls: ['./bootstrap-demo.scss'],
+  templateUrl: './flowbite-demo.html',
+  styleUrl: './flowbite-demo.scss',
   encapsulation: ViewEncapsulation.Emulated,
 })
-export class BootstrapDemoComponent {
+export class FlowbiteDemo {
   public users = users;
 
   currentPage = 1;

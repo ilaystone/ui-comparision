@@ -49,9 +49,7 @@
     color: var(--color-text-primary);
     border-color: var(--color-border);
   }
-}
 
-:host {
   .table {
     background-color: var(--color-bg-card);
     color: var(--color-text-primary);
@@ -90,5 +88,6 @@
     background-color: var(--color-link);
     border-color: var(--color-link);
     color: var(--color-button-primary-text);
+
   }
 }

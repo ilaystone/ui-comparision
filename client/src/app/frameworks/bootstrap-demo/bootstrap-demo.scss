@@ -50,3 +50,45 @@
     border-color: var(--color-border);
   }
 }
+
+:host {
+  .table {
+    background-color: var(--color-bg-card);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+
+    th,
+    td {
+      background-color: var(--color-bg-card);
+      color: var(--color-text-primary);
+      border-color: var(--color-border);
+    }
+
+    th {
+      &:hover {
+        background-color: var(--color-bg-selected);
+      }
+    }
+
+    tbody tr:hover {
+      background-color: var(--color-bg-selected);
+      cursor: pointer;
+    }
+  }
+
+  .pagination .page-link {
+    background-color: var(--color-bg-card);
+    border-color: var(--color-border);
+    color: var(--color-text-primary);
+
+    &:hover {
+      background-color: var(--color-bg-row);
+    }
+  }
+
+  .page-item.active .page-link {
+    background-color: var(--color-link);
+    border-color: var(--color-link);
+    color: var(--color-button-primary-text);
+  }
+}

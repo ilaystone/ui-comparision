@@ -1,6 +1,14 @@
 <div class="bootstrap-demo bootstrap-theme">
     <h2 class="mb-4">Bootstrap UI Demo</h2>
 
+    <!-- Titles -->
+    <h1 class="mb-3"> Title</h1>
+    <h2 class="mb-3"> Title</h2>
+    <h3 class="mb-3"> Title</h3>
+    <h4 class="mb-3"> Title</h4>
+    <h5 class="mb-3"> Title</h5>
+    <h6 class="mb-4"> Title</h6>
+
     <!-- Buttons -->
     <div class="mb-3">
         <button class="btn btn-primary me-2">Primary</button>
@@ -54,4 +62,49 @@
             </div>
         </div>
     </div>
+
+    <!-- list -->
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (user of paginatedUsers; track user.id) {
+                <tr>
+                    <th>{{ user.id }}</th>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.role }}</td>
+                    <td>{{ user.status }}</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap Pagination Controls -->
+    <nav aria-label="User table pagination" class="mt-3">
+        <ul class="pagination justify-content-center">
+            <li class="page-item" [class.disabled]="currentPage === 1">
+                <a class="page-link" href="#" (click)="goToPage(currentPage - 1); $event.preventDefault()">Previous</a>
+            </li>
+
+            <li class="page-item" *ngFor="let page of [].constructor(totalPages); let i = index"
+                [class.active]="currentPage === i + 1">
+                <a class="page-link" href="#" (click)="goToPage(i + 1); $event.preventDefault()">
+                    {{ i + 1 }}
+                </a>
+            </li>
+
+            <li class="page-item" [class.disabled]="currentPage === totalPages">
+                <a class="page-link" href="#" (click)="goToPage(currentPage + 1); $event.preventDefault()">Next</a>
+            </li>
+        </ul>
+    </nav>
+
 </div>

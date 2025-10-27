@@ -1,9 +1,32 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { users } from '../shared/userTable';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-bootstrap-demo',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './bootstrap-demo.html',
   styleUrls: ['./bootstrap-demo.scss'],
+  encapsulation: ViewEncapsulation.ShadowDom,
 })
-export class BootstrapDemoComponent {}
+export class BootstrapDemoComponent {
+  public users = users;
+
+   currentPage = 1;
+  pageSize = 5;
+
+   get totalPages() {
+    return Math.ceil(this.users.length / this.pageSize);
+  }
+
+  get paginatedUsers() {
+    const start = (this.currentPage - 1) * this.pageSize;
+    return this.users.slice(start, start + this.pageSize);
+  }
+
+  goToPage(page: number) {
+    if (page >= 1 && page <= this.totalPages) {
+      this.currentPage = page;
+    }
+  }
+}

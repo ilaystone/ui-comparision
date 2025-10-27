@@ -1,0 +1,22 @@
+export const users = [
+    { id: 1, name: 'Jane Doe', role: 'Frontend Developer', status: 'Active' },
+    { id: 2, name: 'John Smith', role: 'Backend Developer', status: 'Active' },
+    { id: 3, name: 'Sara Lee', role: 'UI/UX Designer', status: 'Inactive' },
+    { id: 4, name: 'Michael Brown', role: 'DevOps Engineer', status: 'Active' },
+    { id: 5, name: 'Emily Davis', role: 'Project Manager', status: 'Active' },
+    { id: 6, name: 'David Wilson', role: 'QA Tester', status: 'Inactive' },
+    { id: 7, name: 'Laura Martinez', role: 'Data Analyst', status: 'Active' },
+    { id: 8, name: 'Chris Johnson', role: 'System Architect', status: 'Active' },
+    { id: 9, name: 'Olivia Thompson', role: 'Business Analyst', status: 'Active' },
+    { id: 10, name: 'Daniel White', role: 'Software Engineer', status: 'Inactive' },
+    { id: 11, name: 'Sophia Garcia', role: 'Product Owner', status: 'Active' },
+    { id: 12, name: 'James Taylor', role: 'Mobile Developer', status: 'Active' },
+    { id: 13, name: 'Ava Rodriguez', role: 'Scrum Master', status: 'Inactive' },
+    { id: 14, name: 'Ethan Harris', role: 'Cloud Specialist', status: 'Active' },
+    { id: 15, name: 'Mia Clark', role: 'Database Administrator', status: 'Active' },
+    { id: 16, name: 'Alexander Lewis', role: 'Machine Learning Engineer', status: 'Inactive' },
+    { id: 17, name: 'Isabella Hall', role: 'Security Analyst', status: 'Active' },
+    { id: 18, name: 'Benjamin Allen', role: 'Integration Engineer', status: 'Active' },
+    { id: 19, name: 'Charlotte Young', role: 'Support Engineer', status: 'Inactive' },
+    { id: 20, name: 'Lucas Hernandez', role: 'Technical Writer', status: 'Active' }
+];

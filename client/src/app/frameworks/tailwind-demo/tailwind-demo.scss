@@ -1,13 +1,7 @@
 @use "tailwindcss";
-
-.tailwind-theme {
-    background: var(--color-bg-primary);
-    color: var(--color-text-primary);
-    background-color: var(--color-bg-primary);
-    min-height: 100vh;
-    padding: 1.5rem;
-
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Table base */
 .tailwind-theme table {

@@ -50,6 +50,9 @@ body {
   min-width: 100vw;
   display: flex; // optional, helps with centering or layout
   flex-direction: column;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  padding: 1.5rem;
 }
 
 :root {

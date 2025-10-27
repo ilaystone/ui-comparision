@@ -1,0 +1,35 @@
+@use "tailwindcss";
+
+@plugin "daisyui";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.daisy-theme {
+    @layer components {
+        h1 {
+            @apply text-5xl font-extrabold text-primary mb-3;
+        }
+
+        h2 {
+            @apply text-4xl font-bold text-primary mb-3;
+        }
+
+        h3 {
+            @apply text-3xl font-semibold text-secondary mb-3;
+        }
+
+        h4 {
+            @apply text-2xl font-semibold text-base-content mb-3;
+        }
+
+        h5 {
+            @apply text-xl font-medium text-base-content mb-3;
+        }
+
+        h6 {
+            @apply text-lg font-medium text-base-content mb-4;
+        }
+    }
+
+}
